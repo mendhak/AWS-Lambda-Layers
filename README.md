@@ -3,12 +3,7 @@
 
 Clone this project, and `npm install`.  
 
-
-Get some AWS credentials, eg using `aws-adfs`
-
-```
-docker run -it --rm mendhak/aws-adfs login --adfs-host=adfs.example.com --printenv --region eu-west-1 --output-format text --no-sspi
-```
+Get yourself some AWS credentials -  either an IAM or temporary credentials.
 
 Create a Lambda role if it doesn't already exist.
 
