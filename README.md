@@ -5,7 +5,7 @@ Clone this project, and `npm install`.
 
 Get yourself some AWS credentials against your account -  either an IAM or temporary credentials.
 
-Create a Lambda role if it doesn't already exist.
+Create a Lambda role if it doesn't already exist:
 
 ```
 aws iam create-role --role-name lambda-ex --assume-role-policy-document file://trust-policy.json
@@ -13,25 +13,25 @@ aws iam create-role --role-name lambda-ex --assume-role-policy-document file://t
 
 Make note of the Role ARN that comes back.
 
-Create a zip file for the lambda
+Create a zip file for the lambda: 
 
 ```
 zip -r myfunction.zip .
 ```
 
-Create your lambda function with the zip
+Create your lambda function with the zip: 
 
 ```
 aws lambda create-function --region eu-west-1 --function-name my-function --zip-file fileb://myfunction.zip --handler lambda/index.handler --runtime nodejs12.x --role arn:aws:iam::123456789012:role/lambda-ex
 ```
 
-Or update the existing function. 
+Or update the existing function: 
 
 ```
 aws lambda update-function-code --region eu-west-1 --function-name my-function --zip-file fileb://myfunction.zip
 ```
 
-Now invoke the function
+Now invoke the function: 
 
 ```
 aws lambda invoke --function-name my-function outype Tail --payload '{ "markdown": "# Bob" }' --cli-binary-format raw-in-base64-out
