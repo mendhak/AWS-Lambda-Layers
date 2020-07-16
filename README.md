@@ -1,5 +1,5 @@
 
-## Creating the 'original' Lambda, which will later be shared
+
 
 Clone this project, and `npm install`.  
 
