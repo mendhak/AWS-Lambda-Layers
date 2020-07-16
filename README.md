@@ -3,7 +3,7 @@
 
 Clone this project, and `npm install`.  
 
-Get yourself some AWS credentials -  either an IAM or temporary credentials.
+Get yourself some AWS credentials against your account -  either an IAM or temporary credentials.
 
 Create a Lambda role if it doesn't already exist.
 
