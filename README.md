@@ -40,3 +40,9 @@ aws lambda invoke --function-name my-function outype Tail --payload '{ "markdown
 And look inside `outfile.txt` for the resulting HTML.  
 
 
+## Notes
+
+The code that's executed is in [lambda/index.js](lambda/index.js).  
+
+The payload is in the `event` object, in this case it's `event.markdown`, which is passed to the `markdown-it` library. 
+
