@@ -3,6 +3,8 @@ Example repo to show Lambda development locally as well as in AWS.  The sample N
 
 The payload the Lambda expects is in the `event` object, in this case it's `event.markdown`, which is passed to the `markdown-it` library. 
 
+You can [run this Lambda in AWS](#running-the-lambda-in-aws), or [run this Lambda in a local container](#running-the-lambda-locally)
+
 
 # Running the Lambda in AWS
 
