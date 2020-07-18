@@ -68,7 +68,7 @@ aws lambda delete-function --function-name my-function
 Clone this project, and `npm install`.  
 
 
-## Use Docker to run it
+## "Deploy" locally
 
 Use the [`lambci/lambda`](https://github.com/lambci/docker-lambda) image to run Lambda functions for local development.  
 This is the same image used by AWS SAM, LocalStack and Serverless.  Minus the overhead.  
@@ -78,6 +78,8 @@ Run the container
 ```
 docker-compose up
 ```
+
+## Run
 
 Then in another terminal, invoke the function, and inspect the outfile. 
 
