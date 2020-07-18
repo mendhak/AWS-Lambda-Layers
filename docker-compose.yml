@@ -1,0 +1,13 @@
+# This Docker Compose helps running the lambda in a local docker container.
+version: '3.7'
+
+services:
+    lambda:
+        image: lambci/lambda:nodejs12.x
+        volumes: 
+            - $PWD:/var/task:ro,delegated
+        environment: 
+            - DOCKER_LAMBDA_STAY_OPEN=1
+        ports: 
+            - 9001:9001
+        command: "lambda/index.handler"
