@@ -70,7 +70,7 @@ Clone this project, and `npm install`.
 
 ## Start the container
 
-Use the [`lambci/lambda`](https://github.com/lambci/docker-lambda) image to run Lambda functions for local development.  
+The [docker-compose.yml](docker-compose.yml) makes use of the [`lambci/lambda`](https://github.com/lambci/docker-lambda) image to run Lambda functions for local development.  
 This is the same image used by AWS SAM, LocalStack and Serverless.  Minus the overhead.  
 
 Run the container
